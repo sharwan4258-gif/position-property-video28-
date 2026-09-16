@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="css position property relative and z - index ">
+    <title>css property </title>
+    <style>
+        body {
+            border: 2px solid black;
+            margin: 33px;
+            padding: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            height: 133px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: rgb(212, 77, 77);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* If we apply css property like relative on any box our element then it we can move them there places */
+        .box2 {
+            background-color: blue;
+            position: relative;
+            top: -50px;
+            left: 20px;
+
+        }
+
+        /* We use relative and other position property to apply top left and z-index property on the element 
+the relative and x-idex property are the property wich moves any box or element from there position 
+if we want to send any box background then we use z-index */
+        .box3 {
+            background-color: purple;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box4 {
+            background-color: yellow;
+            position: relative;
+            top: -50px;
+            left: 20px;
+            /* bottom: 35px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</body>
+
+</html>
